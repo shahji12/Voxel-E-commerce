@@ -1,6 +1,6 @@
-export { default as CartPopup } from '../..\\components\\CartPopup.vue'
-export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
-export { default as ProductCard } from '../..\\components\\ProductCard.vue'
+export const CartPopup = () => import('../..\\components\\CartPopup.vue' /* webpackChunkName: "components/cart-popup" */).then(c => wrapFunctional(c.default || c))
+export const NuxtLogo = () => import('../..\\components\\NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
+export const ProductCard = () => import('../..\\components\\ProductCard.vue' /* webpackChunkName: "components/product-card" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
