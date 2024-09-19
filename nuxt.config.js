@@ -49,4 +49,7 @@ export default {
   build: {
   },
   buildDir: 'dist',
+  generate: {
+    dir: 'dist' // Default directory for static files
+  }
 }
