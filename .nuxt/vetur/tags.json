@@ -1,0 +1,11 @@
+{
+  "CartPopup": {
+    "description": "Auto imported from components/CartPopup.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "ProductCard": {
+    "description": "Auto imported from components/ProductCard.vue"
+  }
+}
