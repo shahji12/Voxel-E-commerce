@@ -44,7 +44,4 @@ export default {
   axios: {
     baseURL: 'https://fakestoreapi.com',
   },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
 }
