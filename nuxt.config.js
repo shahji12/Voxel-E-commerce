@@ -1,5 +1,6 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'server',
+  ssr: true,
   head: {
     title: 'e-commerce-store',
     htmlAttrs: {
@@ -11,12 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/main.scss',
     '@fortawesome/fontawesome-free/css/all.css'
@@ -26,17 +23,7 @@ export default {
   plugins: [
     '~/plugins/axios.js'
   ],
-  
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-  target: 'server',
-  ssr: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
-
+  buildModules: [],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
@@ -44,4 +31,5 @@ export default {
   axios: {
     baseURL: 'https://fakestoreapi.com',
   },
+  build: {}
 }
